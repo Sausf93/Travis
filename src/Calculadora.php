@@ -2,14 +2,17 @@
 
 class Calculadora
 {
- private $mensaje;
- public function __construct($mensaje) {
- $this->_mensaje = $mensaje;
- }
+    private $total=0;
 
- public function getMensaje() {
- return $this->_mensaje;
- }
+    public function __construct($total) {
+        $this->total = $total;
+        }
+
+    public function Suma($num1, $num2){
+
+        $total=$num1+$num2;
+        return $total;
+    }
 }
 
 
